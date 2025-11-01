@@ -15,5 +15,6 @@ Edita los settings en Pulsar para añadir/quitar etiquetas y colores.
 ## Uso
 
 - Abre un archivo HTML/PHP
-- Las líneas con <h2>, <h3>, etc. se resaltarán automáticamente
+- Las líneas con h2, h3, etc. se resaltarán automáticamente
+- Activa/desactiva los elementos a resaltar  en Settings > Packages > line-highlighter-html
 - Configura colores en Settings > Packages > line-highlighter-html
