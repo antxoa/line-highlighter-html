@@ -1,0 +1,105 @@
+{
+  "name": "line-highlighter-html",
+  "main": "./lib/main.js",
+  "version": "1.0.0",
+  "description": "Resalta líneas con etiquetas HTML (manual toggle).",
+  "activationCommands": {
+    "atom-workspace": [
+      "line-highlighter-html:toggle"
+    ]
+  },
+  "repository": "https://github.com/antxoa/line-highlighter-html",
+  "license": "MIT",
+  "configSchema": {
+    "tags": {
+      "type": "object",
+      "order": 1,
+      "properties": {
+        "h1": {
+          "title": "Resaltar <h1>",
+          "type": "boolean",
+          "default": false
+        },
+        "h2": {
+          "title": "Resaltar <h2>",
+          "type": "boolean",
+          "default": true
+        },
+        "h3": {
+          "title": "Resaltar <h3>",
+          "type": "boolean",
+          "default": true
+        },
+        "h4": {
+          "title": "Resaltar <h4>",
+          "type": "boolean",
+          "default": false
+        },
+        "article": {
+          "title": "Resaltar <article>",
+          "type": "boolean",
+          "default": false
+        },
+        "section": {
+          "title": "Resaltar <section>",
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "resaltar": {
+      "type": "object",
+      "order": 2,
+      "properties": {
+        "<h1>": {
+          "type": "object",
+          "properties": {
+            "background": { "type": "string", "default": "#fff3cd" },
+            "color": { "type": "string", "default": "#856404" },
+            "borderLeft": { "type": "string", "default": "4px solid #ffc107" }
+          }
+        },
+        "<h2>": {
+          "type": "object",
+          "properties": {
+            "background": { "type": "string", "default": "#fff3cd" },
+            "color": { "type": "string", "default": "#333333" },
+            "borderLeft": { "type": "string", "default": "4px solid #ffc107" }
+          }
+        },
+        "<h3>": {
+          "type": "object",
+          "properties": {
+            "background": { "type": "string", "default": "#d1ecf1" },
+            "color": { "type": "string", "default": "#0c5460" },
+            "borderLeft": { "type": "string", "default": "4px solid #17a2b8" }
+          }
+        },
+        "<h4>": {
+          "type": "object",
+          "properties": {
+            "background": { "type": "string", "default": "#d1ecf1" },
+            "color": { "type": "string", "default": "#0c5460" },
+            "borderLeft": { "type": "string", "default": "4px solid #17a2b8" }
+          }
+        },
+        "<article>": {
+          "type": "object",
+          "properties": {
+            "background": { "type": "string", "default": "#d4edda" },
+            "color": { "type": "string", "default": "#155724" },
+            "borderLeft": { "type": "string", "default": "4px solid #28a745" }
+          }
+        },
+        "<section>": {
+          "type": "object",
+          "properties": {
+            "background": { "type": "string", "default": "#f8d7da" },
+            "color": { "type": "string", "default": "#721c24" },
+            "borderLeft": { "type": "string", "default": "4px solid #f5c6cb" }
+          }
+        }
+      }
+    }
+  }
+}
